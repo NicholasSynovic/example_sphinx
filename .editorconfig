@@ -43,3 +43,8 @@ indent_size = 2
 [CODEOWNERS]
 indent_style = space
 indent_size = 4
+
+# ReStructured Text
+[*.rst]
+indent_style = space
+indent_size = 3
