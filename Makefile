@@ -1,7 +1,7 @@
 build-html:
 	git --no-pager tag | rev | col | cut -d ' ' -f 1 | rev | xargs -I % poetry version %
 	poetry version --short > src/_version
-	mkdocs build --clean --site-dir html
+	sphinx-build --write-all docs html
 
 create-dev:
 	pre-commit install
