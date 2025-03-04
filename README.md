@@ -1,13 +1,9 @@
-#############
- Hello World
-#############
+# Hello World
 
-Template repository for getting started with and deploying a MkDocs
+> Template repository for getting started with and deploying a MkDocs
 project
 
-*******
- About
-*******
+## About
 
 This repository demonstrates how to create a static site using Sphinx.
 This repository does not demonstrate how to convert API docstrings into
@@ -19,9 +15,7 @@ directives to build the site into HTML files, and a GitHub Action
 workflow to deploy the site onto GitHub pages. All dependencies are
 listed in the pyproject.toml file in the root of the directory.
 
-****************
- How To Develop
-****************
+## How To Develop
 
 Assuming that you have cloned the repository:
 
@@ -30,8 +24,7 @@ Assuming that you have cloned the repository:
 This will create a Python virtual environment, install Poetry into it,
 and download dependencies managed by Poetry.
 
-Config Files
-============
+### Config Files
 
 The following config files can be found in the root of the directory:
 
@@ -41,21 +34,16 @@ The following config files can be found in the root of the directory:
 -  ``.mdformat.toml``: MD Format config file
 -  ``.pre-commit-config.json``: pre-commit config file config file
 
-**************
- How To Build
-**************
+## How To Build
 
 -  ``make build-html`` to build the HTML version of the site, or
 
-HTML
-====
+### HTML
 
 The HTML content of the site is stored in the root level `html`
 directory.
 
-***************
- How To Deploy
-***************
+## How To Deploy
 
 ``make deploy-gh`` will commit the current project root-level ``html``
 directory to the root of a ``gh-pages`` branch.
